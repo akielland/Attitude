@@ -39,11 +39,15 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
-
 # translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Data files that shouldn't be versioned
+*.csv
+*.tsv
+*.xlsx
+*.rds
+data/

@@ -1740,6 +1740,14 @@ saveRDS(df_03, file = "data/processed/survey_cleaned_final.rds")
 df_03 <- readRDS("data/processed/survey_cleaned_final.rds")
 
 ##################################################################
+df_mca <- df_03 %>% select(-ID)
+df_mca <- df_mca %>% select(-q142_HJEMME_FREKVENS_2)
+
+result <- soc.mca(active = df_mca)
+result <- soc.mca(df_mca, passive = "NS")
+
+names(df_mca)
+##################################################################
 ## Check All data:
 summary(df_03)
 

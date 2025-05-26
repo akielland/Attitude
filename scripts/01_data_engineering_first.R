@@ -5,13 +5,12 @@ library(labelled)  # Required for var_label()
 library(dplyr)
 library(tidyr)
 
-## IMPORT
-file_path <- "data/Hovedutvalg.sav"
-df_0 <- read_sav(file_path)
-dim(df_0)
+
+df_01 <- readRDS("data/processed/survey_responses.rds")
 
 
-## INSPECT DATA FROM SPSS file
+
+## INSPECT RAW DATA 
 
 # Count var: need to match ncol(df) else, there might be a list issue.
 length(sapply(df_0, class))

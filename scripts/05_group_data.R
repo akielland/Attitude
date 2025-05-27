@@ -9,7 +9,7 @@
 
 # 1️⃣ SOCIO-DEMOGRAPHICS (with income included)
 socio_demo_vars <- c(
-  "age_group",         # Age group
+  "alder",         # Age group
   "c_kjonn",           # Gender
   "utdanning",         # Education level
   "yrkesstatus",       # Employment status
